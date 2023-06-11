@@ -7,12 +7,9 @@ In this section, we give proof that the schedulability test ZLL from the study [
 $$W_k^{CI}(\tau_i,x) = \lfloor{\frac{[[ x - C_i ]]_0}{T_i}} \rfloor  \cdot C_i + C_i + \beta$$
 where $$\beta = [[ \max_i(\gamma)]]_0^{C_i-1},\ \gamma = [[ x-C_i ]]_0 \mod T_i$$,
 
-\begin{equation}\label{eqn:25}
-   \min_i(x)  = \max_{1\leq y \leq x}\{\llbracket y - \lfloor{\Omega_i(y)/m}\rfloor \rrbracket_0^{C_i}\}
-\end{equation}
-\begin{equation}\label{eqn:26}
-       \max_i(x)  = C_i - \min_i(T_i-x)
-\end{equation}
+$$\min_i(x)  = \max_{1\leq y \leq x}\{[[ y - \lfloor{\Omega_i(y)/m}\rfloor ]]_0^{C_i}\}$$
+
+$$\max_i(x)  = C_i - \min_i(T_i-x)$$
 
 \begin{pf}
 Based on the above definitions, we have,
