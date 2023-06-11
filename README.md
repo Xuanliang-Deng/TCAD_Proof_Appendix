@@ -15,7 +15,7 @@ $$\max_i(x)  = C_i - \min_i(T_i-x)$$
 Based on the above definitions, we have,
 
 $$\begin{array}{ll}
-    \beta  & = \min(\max_i(\llbracket x-C_i \rrbracket_0 \mod \ T_i),\ C_i-1) \\
+    \beta  & = \min(\max_i([[ x-C_i ]]_0 \mod \ T_i),\ C_i-1) \\
     & = \min(\max_i(\max(x-C_i,0) \mod \ T_i),\ C_i-1)\\
     & = \min(C_i - \min_i(T_i-\max(x-C_i,0) \mod \ T_i),\ C_i-1)
 \end{array}
