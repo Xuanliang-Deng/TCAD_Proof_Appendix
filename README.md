@@ -147,6 +147,6 @@ where $d = C_i - \vartheta_{i,k}(a,c)$. Note that $c = \llbracket r_{k,l}+x-r_{i
 
 ## References
 <div id = "zhou17"></div>
-- [1] [Improved Carry-in Workload Estimation for Global Multiprocessor Scheduling] (https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7873231&casa_token=sdsbiVaUEAMAAAAA:WZaew1BxmgmwuPsW38GoWBqyIjTqvqydwKZ-6ySA3Zu7dx6sPuUXzRHJ2hx5HeNaDKuPcAgSaFs&tag=1)
+- [1] [Improved Carry-in Workload Estimation for Global Multiprocessor Scheduling] (https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7873231&casa_token=sdsbiVaUEAMAAAAA:WZaew1BxmgmwuPsW38GoWBqyIjTqvqydwKZ-6ySA3Zu7dx6sPuUXzRHJ2hx5HeNaDKuPcAgSaFs&tag=1/)
 
 
