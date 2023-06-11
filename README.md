@@ -4,7 +4,7 @@ Proofs of existing response time analyses and their compatibilities with RT depe
 ## Proof of ZLL's incompatibility with RT dependency
 In this section, we give proof that the schedulability test ZLL from the study [<sup>1</sup>](#zhou17) does not satisfy the conditions of the RT dependency. Zhou et al. proposed an improvement over the RTA-LC schedulability test [<sup>2</sup>](#Guan09) to calculate a more accurate carry-in workload of tasks. The carry-in workload can be computed by equations (1) to (5) in the study [<sup>1</sup>](#zhou17),
 
-$$W_k^{CI}(\tau_i,x) = \lfloor{\frac{\llbracket x - C_i \rrbracket_0}{T_i}} \rfloor  \cdot C_i + C_i + \beta$$
+$$W_k^{CI}(\tau_i,x) = \lfloor{\frac{[[ x - C_i ]]_0}{T_i}} \rfloor  \cdot C_i + C_i + \beta$$
 where $\beta = \llbracket \max_i(\gamma)\rrbracket_0^{C_i-1},\ \gamma = \llbracket x-C_i \rrbracket_0 \mod T_i$,
 
 \begin{equation}\label{eqn:25}
