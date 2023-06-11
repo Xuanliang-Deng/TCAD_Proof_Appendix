@@ -2,7 +2,7 @@
 Proofs of existing response time analyses and their compatibilities with RT dependency
 
 ## Proof of ZLL's incompatibility with RT dependency
-In this section, we give proof that the schedulability test ZLL from the study [<sup>1</sup>](#zhou17) does not satisfy the conditions of the RT dependency. Zhou et al. proposed an improvement over the RTA-LC schedulability test [<sup>2</sup>](#Guan09) to calculate a more accurate carry-in workload of tasks. The carry-in workload can be computed by equations (1) to (5) in the study [<sup>1</sup>](#zhou17),
+In this section, we give proof that the schedulability test ZLL from the study [<sup>1</sup>](#zhou17) does not satisfy the conditions of the RT dependency. Zhou et al. proposed an improvement over the RTA-LC schedulability test [<sup>2</sup>](#Guan09) to calculate a more accurate carry-in workload of tasks. The carry-in workload can be computed by equations in the study [<sup>1</sup>](#zhou17) provided below,
 
 $$W_k^{CI}(\tau_i,x) = \lfloor{\frac{[[ x - C_i ]]_0}{T_i}} \rfloor  \cdot C_i + C_i + \beta$$
 where $$\beta = [[ \max_i(\gamma)]]_0^{C_i-1}, \gamma = [[ x-C_i ]]_0 \mod T_i$$
@@ -11,15 +11,16 @@ $$\min_i(x)  = \max_{1\leq y \leq x}\{[[ y - \lfloor{\Omega_i(y)/m}\rfloor ]]_0^
 
 $$\max_i(x)  = C_i - \min_i(T_i-x)$$
 
-\begin{pf}
+
 Based on the above definitions, we have,
-\begin{equation}\label{eqn:27}
-\begin{array}{ll}
+
+$$\begin{array}{ll}
     \beta  & = \min(\max_i(\llbracket x-C_i \rrbracket_0 \mod \ T_i),\ C_i-1) \\
     & = \min(\max_i(\max(x-C_i,0) \mod \ T_i),\ C_i-1)\\
     & = \min(C_i - \min_i(T_i-\max(x-C_i,0) \mod \ T_i),\ C_i-1)
 \end{array}
-\end{equation}
+$$
+
 Denote $z = T_i-\max(x-C_i,\ 0) \mod \ T_i $, the above equation can be written as,
 \begin{equation}\label{eqn:28}
 \begin{array}{ll}
@@ -35,7 +36,8 @@ Note that the tasks are ordered by decreasing priorities. The analyzed task is $
 \end{array}
 \end{equation}
 Since in Eq.~\eqref{eqn:28}, $\Omega_i(y)$ is the interference of task $\tau_{j,(j<i<k)}$ on task $\tau_{i,(i<k)}$, which depends on the relative order of task $\tau_i$ in the higher priority task set. This violates the conditions A1, and A2 of RT dependency. 
-\end{pf}
+
+
 
 \section{Proof of improved-RTA-LC's incompatibility with RT dependency}
 \begin{pf}
