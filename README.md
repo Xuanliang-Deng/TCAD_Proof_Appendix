@@ -1,7 +1,6 @@
 # TCAD_Proof_Appendix
 Proofs of existing response time analyses and their compatibilities with RT dependency
 
-\usepackage{mathptmx}
 ## Proof of ZLL's incompatibility with RT dependency
 In this section, we give proof that the schedulability test ZLL from the study [<sup>1</sup>](#zhou17) does not satisfy the conditions of the RT dependency. Zhou et al. proposed an improvement over the RTA-LC schedulability test [<sup>2</sup>](#Guan09) to calculate a more accurate carry-in workload of tasks. The carry-in workload can be computed by equations in the study [<sup>1</sup>](#zhou17) provided below,
 
