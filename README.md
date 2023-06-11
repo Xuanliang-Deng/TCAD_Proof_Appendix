@@ -62,7 +62,7 @@ $$\begin{array}{ll}
 In the above equation, to compute $R_k^{k-i,l}$ we need to know the values of $k,\ i,\ l$ first, which are the indices of relative orders in the higher priority task set. Therefore when computing the response time of analyzed task $\tau_k$, it is dependent on the relative orders of tasks in $\tau_k$'s higher priority task set, this violates the conditions A1, A2 of RT dependency. 
 
 ## Proof of EPE-ZLL's incompatibility with RT dependency
-In this section, we give proof that the latest schedulability test EPE-ZLL does not satisfy the conditions of RT dependency. First, we give a set of definitions proposed in \cite{EPE_ZLL_zhou2021}. Let $\mathbf{L},\mathbf{P}$ be two time intervals respectively,
+In this section, we give proof that the latest schedulability test EPE-ZLL does not satisfy the conditions of RT dependency. First, we give a set of definitions proposed in  \cite{EPE_ZLL_zhou2021}. Let $\mathbf{L},\mathbf{P}$ be two time intervals respectively,
 \begin{equation}
     \mathbf{L}=[r_{k,l}, r_{k,l}+UR_k^a]
 \end{equation}
