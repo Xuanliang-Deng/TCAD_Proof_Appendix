@@ -2,8 +2,7 @@
 Proofs of existing response time analyses and their compatibilities with RT dependency
 
 ## Proof of ZLL's incompatibility with RT dependency
-In this section, we give proof that the schedulability test ZLL from the study [<sup>1</sup>](#zhou17) does not satisfy the conditions of the RT dependency. In \cite{Zhou17}, Zhou et al. proposed an improvement over the RTA-LC schedulability test \cite{Guan09} to calculate a more accurate carry-in workload of tasks. The carry-in workload can be computed by,
-}
+In this section, we give proof that the schedulability test ZLL from the study [<sup>1</sup>](#zhou17) does not satisfy the conditions of the RT dependency. Zhou et al. proposed an improvement over the RTA-LC schedulability test [<sup>2</sup>](#Guan09) to calculate a more accurate carry-in workload of tasks. The carry-in workload can be computed by,
 
 % Eqn 1-5 in ZLL's paper
 \begin{equation}\label{eqn:24}
@@ -148,5 +147,8 @@ where $d = C_i - \vartheta_{i,k}(a,c)$. Note that $c = \llbracket r_{k,l}+x-r_{i
 ## References
 <div id = "zhou17"></div>
 - [1] Zhou, Q., Li, G., & Li, J. (2017). Improved carry-in workload estimation for global multiprocessor scheduling. IEEE Transactions on Parallel and Distributed Systems, 28(9), 2527-2538. 
+
+<div id = "Guan09"></div>
+- [2] Guan, N., Stigge, M., Yi, W., & Yu, G. (2009, December). New response time bounds for fixed priority multiprocessor scheduling. In 2009 30th IEEE Real-Time Systems Symposium (pp. 387-397). IEEE.
 
 
