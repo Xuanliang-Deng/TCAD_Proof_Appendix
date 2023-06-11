@@ -34,11 +34,11 @@ Note that the tasks are ordered by decreasing priorities. The analyzed task is $
 
 The total interference $\Omega_k(x)$ can be computed by,
 
-$\begin{array}{lrl}
+$$\begin{array}{lrl}
     \Omega_k(x) & = \max(
     \sum_{\tau_i\in \tau^{NC}}(\llbracket  \lfloor{ \frac{x}{T_i}}  \rfloor  \cdot C_i + \llbracket x \mod \ T_i \rrbracket^{C_i}  \rrbracket_0^{x-C_k+1}) \\ 
     & + \sum_{\tau_i\in\tau^{CI}}( \llbracket \lfloor{\frac{\llbracket x - C_i \rrbracket_0}{T_i}} \rfloor  \cdot C_i + C_i + \beta \rrbracket_0^{x-C_k+1})
-\end{array}$
+\end{array}$$
 
 Since $\Omega_i(y)$ is the interference of task $\tau_{j}$ (j<i<k) on task $\tau_{i}$ (i<k), which depends on the relative order of task $\tau_i$ in the higher priority task set. This violates the conditions A1, and A2 of RT dependency. 
 
