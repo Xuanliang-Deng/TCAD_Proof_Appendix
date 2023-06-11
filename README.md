@@ -36,7 +36,7 @@ The total interference $\Omega_k(x)$ can be computed by,
 
 $$\begin{array}{ll}
     \Omega_k(x) & = \max(
-    \sum_{\tau_i\in \tau^{NC}}([ [  \lfloor{ \frac{x}{T_i}}  \rfloor  \cdot C_i + [ [ x \mod \ T_i ] ]^{C_i}  ] ]_0^{x-C_k+1}) \\ 
+    \sum_{\tau_i\in \tau^{NC}}([[ \lfloor{ \frac{x}{T_i}}  \rfloor  \cdot C_i + [[ x \mod \ T_i ]]^{C_i}]]_0^{x-C_k+1}) \\ 
     & + \sum_{\tau_i\in\tau^{CI}}( \llbracket \lfloor{\frac{\llbracket x - C_i \rrbracket_0}{T_i}} \rfloor  \cdot C_i + C_i + \beta \rrbracket_0^{x-C_k+1})
 \end{array}$$
 
