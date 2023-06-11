@@ -43,12 +43,9 @@ $$\begin{array}{lrl}
 Since $\Omega_i(y)$ is the interference of task $\tau_{j}$ (j<i<k) on task $\tau_{i}$ (i<k), which depends on the relative order of task $\tau_i$ in the higher priority task set. This violates the conditions A1, and A2 of RT dependency. 
 
 
+## Proof of improved-RTA-LC's incompatibility with RT dependency
+In [<sup>3</sup>](#Guan15), Guan et al. improved the analysis precision of their previous schedulability test RTA-LC [<sup>2</sup>](#Guan09) by replacing $\alpha$ with a tighter bound $\Delta^{new}(\tau_i,x)$, the more accurate carry-in workload is computed by,
 
-\section{Proof of improved-RTA-LC's incompatibility with RT dependency}
-\begin{pf}
-\textcolor{blue}{
-In \cite{Guan15}, Guan et al. improved the analysis precision of their previous schedulability test RTA-LC \cite{Guan09} by replacing $\alpha$ with a tighter bound $\Delta^{new}(\tau_i,x)$, the more accurate carry-in workload is computed by,
-}
 
 \begin{equation}
    I_k^{CI}(\tau_i,x) = \llbracket \lfloor \llbracket x-C_i \rrbracket_0/T_i \rfloor C_i + C_i + \Delta^{new}(\tau_i,x)   \rrbracket^{x-C_k+1}
@@ -150,4 +147,6 @@ where $d = C_i - \vartheta_{i,k}(a,c)$. Note that $c = \llbracket r_{k,l}+x-r_{i
 <div id = "Guan09"></div>
 - [2] Guan, N., Stigge, M., Yi, W., & Yu, G. (2009, December). New response time bounds for fixed priority multiprocessor scheduling. In 2009 30th IEEE Real-Time Systems Symposium (pp. 387-397). IEEE.
 
+<div id = "Guan15"></div>
+- [3] Guan, N., Han, M., Gu, C., Deng, Q., & Yi, W. (2015, August). Bounding carry-in interference to improve fixed-priority global multiprocessor scheduling analysis. In 2015 IEEE 21st International Conference on Embedded and Real-Time Computing Systems and Applications (pp. 11-20). IEEE.
 
