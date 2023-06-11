@@ -47,18 +47,20 @@ Since $\Omega_i(y)$ is the interference of task $\tau_{j}$ (j<i<k) on task $\tau
 In the study [<sup>3</sup>](#Guan15), Guan et al. improved the analysis precision of their previous schedulability test RTA-LC [<sup>2</sup>](#Guan09) by replacing $\alpha$ with a tighter bound $\Delta^{new}(\tau_i,x)$, the more accurate carry-in workload is computed by,
 
 $$
-   I_k^{CI}(\tau_i,x) = [[ \lfloor [[ x-C_i ]]_0/T_i \rfloor C_i + C_i + \Delta^{new}(\tau_i,x)   ]]^{x-C_k+1}
+   I_k^{CI}(\tau_i,x) = \llbracket \lfloor \llbracket x-C_i \rrbracket_0/T_i \rfloor C_i + C_i + \Delta^{new}(\tau_i,x)   \rrbracket^{x-C_k+1}
 $$
 where $\Delta^{new}(\tau_i,x)$ is the upper bound of the carry-in job of $\tau_i$ computed by,
-\begin{equation}
+
+$$
     \Delta^{new}(\tau_i,x) = \max_{l\in [0,C_i]}{\llbracket \Delta(\tau_i,x,R_i^{k-i,l}) \rrbracket^l}
-\end{equation}
+$$
 Note that $\Delta(\tau_i,x,R_i^{k-i,l})$ is the $\alpha$ in RTA-LC by replacing the response time $R_i$ with the new $R_i^{k-i,l}$, which is the minimal solution of the following equation,
-\begin{equation}\label{eqn:32}
+
+$$
     x = \lfloor \frac{\Omega_k(x) + (k-i)\cdot l}{M} \rfloor + C_k - l
-\end{equation}
+$$
 In the above equation, to compute $R_k^{k-i,l}$ we need to know the values of $k,\ i,\ l$ first, which are the indices of relative orders in the higher priority task set. Therefore when computing the response time of analyzed task $\tau_k$, it is dependent on the relative orders of tasks in $\tau_k$'s higher priority task set, this violates the conditions A1, A2 of RT dependency. 
-\end{pf}
+
 
 \section{Proof of EPE-ZLL's incompatibility with RT dependency}\label{appendix_c}
 In this section, we give proof that the latest schedulability test EPE-ZLL does not satisfy the conditions of RT dependency. First, we give a set of definitions proposed in \cite{EPE_ZLL_zhou2021}. Let $\mathbf{L},\mathbf{P}$ be two time intervals respectively,
