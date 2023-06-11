@@ -44,12 +44,11 @@ Since $\Omega_i(y)$ is the interference of task $\tau_{j}$ (j<i<k) on task $\tau
 
 
 ## Proof of improved-RTA-LC's incompatibility with RT dependency
-In [<sup>3</sup>](#Guan15), Guan et al. improved the analysis precision of their previous schedulability test RTA-LC [<sup>2</sup>](#Guan09) by replacing $\alpha$ with a tighter bound $\Delta^{new}(\tau_i,x)$, the more accurate carry-in workload is computed by,
+In the study [<sup>3</sup>](#Guan15), Guan et al. improved the analysis precision of their previous schedulability test RTA-LC [<sup>2</sup>](#Guan09) by replacing $\alpha$ with a tighter bound $\Delta^{new}(\tau_i,x)$, the more accurate carry-in workload is computed by,
 
-
-\begin{equation}
-   I_k^{CI}(\tau_i,x) = \llbracket \lfloor \llbracket x-C_i \rrbracket_0/T_i \rfloor C_i + C_i + \Delta^{new}(\tau_i,x)   \rrbracket^{x-C_k+1}
-\end{equation}
+$$
+   I_k^{CI}(\tau_i,x) = [[ \lfloor [[ x-C_i ]]_0/T_i \rfloor C_i + C_i + \Delta^{new}(\tau_i,x)   ]]^{x-C_k+1}
+$$
 where $\Delta^{new}(\tau_i,x)$ is the upper bound of the carry-in job of $\tau_i$ computed by,
 \begin{equation}
     \Delta^{new}(\tau_i,x) = \max_{l\in [0,C_i]}{\llbracket \Delta(\tau_i,x,R_i^{k-i,l}) \rrbracket^l}
